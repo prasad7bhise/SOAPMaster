@@ -1,0 +1,60 @@
+category table{
+
+create table Category(category_id int primary key auto_increment,category_name varchar(50));
+insert into Category (category_name)values('Waffle');
+insert into Category (category_name)values('Milk-Shake');
+insert into Category (category_name)values('Mocktail');
+insert into Category (category_name)values('pasta');
+insert into Category (category_name)values('Wraps');
+insert into Category (category_name)values('Snacks');
+insert into Category (category_name)values('Sandwiches');
+insert into Category (category_name)values('Pizza');
+insert into Category (category_name)values('Maggi');
+insert into Category (category_name)values('Oven-Baked-Bread');
+insert into Category (category_name)values('Patties');
+insert into Category (category_name)values('Burger');
+
+}
+
+Menu_list
+{
+CREATE TABLE Menu_list
+(
+category_id INT,
+menu_id INT primary key auto_increment ,
+menu_name VARCHAR(50),
+price int,
+CONSTRAINT FK_Menu_List FOREIGN KEY (category_id) REFERENCES
+Category( category_id ) ON UPDATE CASCADE ON DELETE CASCADE);
+
+insert into Menu_list (category_id,menu_name,price)values(1,'Caramal Waffle',99);
+insert into Menu_list (category_id,menu_name,price)values(1,'Choco-Hazelnut watffle',129);
+insert into Menu_list (category_id,menu_name,price)values(1,'Maple Waffle',139);
+insert into Menu_list (category_id,menu_name,price)values(1,'Banana-Maple Waffle',149);
+insert into Menu_list (category_id,menu_name,price)values(2,'Banana Shake',69);
+insert into Menu_list (category_id,menu_name,price)values(2,'ButterScotch Shake',79);
+insert into Menu_list (category_id,menu_name,price)values(3,'Lemonade',39);
+insert into Menu_list (category_id,menu_name,price)values(3,'Virgin Mojito',49);
+insert into Menu_list (category_id,menu_name,price)values(4,'Red Pasta',89);
+insert into Menu_list (category_id,menu_name,price)values(4,'White Pasta',99);
+insert into Menu_list (category_id,menu_name,price)values(5,'Aloo Patty Wrap',59);
+
+}
+
+admin_login{
+CREATE TABLE Admin_login(username varchar(50),password varchar(50));
+
+insert into Admin_login values('user1@gmail.com','password1234');
+}
+
+Customer
+{
+CREATE TABLE Customer_detail
+(
+mobile_no VARCHAR(10) PRIMARY KEY,
+name VARCHAR(50),
+email VARCHAR(30));
+
+insert into Customer_detail values('+919096','Prasad Bhise','prasad.p.bhise@gmail.com');
+
+}

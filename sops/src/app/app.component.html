@@ -1,0 +1,54 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+     </div>
+
+  </div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+      <div class="navbar-header">
+
+          <a class="navbar-brand" href="#">SOPS</a>
+
+       </div>
+
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav">
+              <li><a routerLink="table-list">Tables</a></li>
+              <li><a routerLink='category-list'>Category</a></li>
+              <li><a routerLink="menu-list">Menu</a></li>
+              <li><a routerLink="payment-list">Payment</a></li>
+              <li><a routerLink="employee-list">Employee</a></li>
+
+            </ul>
+       </div>
+
+      </div>
+</nav>
+
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+<div class="pull-right">
+    <div class="message">Welcome</div>
+    <button (click)="onLogout()" class="btn btn-success pull-right">Logout</button>
+
+</div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+          <router-outlet></router-outlet>
+      </div>
+   </div>
+
+</div>

@@ -1,0 +1,42 @@
+
+<h1>Add MenuList</h1>
+<div class='col-md-12'>
+
+<div class="col-md-6">
+    <div class="form-group">
+      <label for="">Category</label>
+      <select [(ngModel)]="category_id" class="form-control">
+        <option
+          *ngFor="let category of categories"
+          [value]="category.category_id">{{category.category_name}}</option>
+      </select>
+    </div>
+  </div>
+
+
+
+<div class="row">
+    <div class="col-md-12">
+      <div class="form-group">
+        <label for="">Menu Name</label>
+        <input [(ngModel)]="menu_name" type="text" class="form-control">
+      </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label for="">price</label>
+            <input [(ngModel)]="price" rows="text" class="form-control">
+          </div>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <button (click)=onAddMenu() class="btn btn-success">Add Product</button>
+            <a style="margin-left: 10px;" routerLink="/menu-list" class="btn btn-danger">Cancel</a>
+        </div>
+    </div>
+</div>
