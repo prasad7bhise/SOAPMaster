@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { CategoryService } from '../category.service';
-import * as toastr from 'toastr';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core'
+import { CategoryService } from '../category.service'
+import * as toastr from 'toastr'
+import { Router } from '@angular/router'
 
 
 @Component({
@@ -14,12 +14,12 @@ import { Router } from '@angular/router';
 
 export class CategoryAddComponent implements OnInit {
 
-  categories = [];
-  category_name: string;
+  categories = []
+  category_name: string
 
 
   constructor(private categoryService: CategoryService, private router: Router) {
-    this.categoryService = categoryService;
+    this.categoryService = categoryService
   }
 
   ngOnInit() { }
@@ -40,15 +40,3 @@ export class CategoryAddComponent implements OnInit {
 }
 
 
-// onAdd() {
-//   this.movieService
-//     .addMovie(this.title, this.genre, this.writers, this.director, this.actors, this.rating, this.description, this.thumbnail)
-//     .subscribe(response => {
-//       if (response['status'] == 'success') {
-//         toastr.success('added movie successfully')
-//         this.router.navigate(['/movies-list'])
-//       } else {
-//         console.log(response['error'])
-//       }
-//     })
-// }

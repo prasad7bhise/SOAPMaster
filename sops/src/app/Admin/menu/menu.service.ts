@@ -1,5 +1,5 @@
-import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core'
+import { HttpClient } from '@angular/common/http'
 
 @Injectable()
 export class MenuService {
@@ -20,12 +20,12 @@ addMenu(
             category_id: category_id,
               menu_name: menu_name,
               price: price,
-     };
-     return this.http.post(this.url, body);
+     }
+     return this.http.post(this.url, body)
     }
 
   getmenus() {
-    return this.http.get(this.url);
+    return this.http.get(this.url)
   }
 
   deleteMenus(menu_id:number){

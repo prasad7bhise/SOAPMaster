@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import {CategoryService} from '../category.service';
-import * as toastr from "toastr";
+import { Component, OnInit } from '@angular/core'
+import { Router, ActivatedRoute } from '@angular/router'
+import {CategoryService} from '../category.service'
+import * as toastr from 'toastr'
 
 @Component({
   selector: 'app-category-update',
@@ -10,8 +10,8 @@ import * as toastr from "toastr";
 })
 
 export class CategoryUpdateComponent implements OnInit {
-  category_name:''
-  category_id:number
+  category_name: ''
+  category_id: number
   constructor(private router:Router,private activatedRoute:ActivatedRoute,private categoryService:CategoryService) { //private??
       const category_id=this.activatedRoute.snapshot.params['category_id']
       categoryService.getCategoryById(category_id).subscribe(response=>{

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import {CategoryService} from '../category.service';
-import * as toastr from 'toastr';
+import { Component, OnInit } from '@angular/core'
+import {CategoryService} from '../category.service'
+import * as toastr from 'toastr'
 
 @Component({
   selector: 'app-category-list',
@@ -28,6 +28,7 @@ export class CategoryListComponent implements OnInit {
       }
     })
   }
+
 
   deleteCategory(category_id:number){
     this.categoryservice.deleteCategory(category_id).subscribe(response=>{
