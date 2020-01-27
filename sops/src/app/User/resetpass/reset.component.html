@@ -1,0 +1,53 @@
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="#">SOPS</a>
+
+         </div>
+
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+               <ul class="nav navbar-nav">
+                <li><a routerLink="/table-list">Edit Profile</a></li>
+                <li><a routerLink='/'>Cart</a></li>
+                <li><a routerLink="/">Menu</a></li>
+                <li><a routerLink="/">User list</a></li>
+                <li><a routerLink="/">my Orders</a></li>
+
+              </ul>
+         </div>
+
+        </div>
+  </nav>
+  </body>
+<h1> ResetPassword</h1>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="login">
+
+        <div class="form">
+          <div class="form-group">
+            <label for="">Email</label>
+            <input [(ngModel)]="email" type="email" class="form-control" placeholder="abc@gmail.com">
+          </div>
+          <div class="form-group">
+            <label for="">New Password</label>
+            <input [(ngModel)]="password" type="password" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Confirm Password</label>
+            <input [(ngModel)]="confirmpassword" type="password" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <button (click)="onSet()" class="btn btn-success">Set Password</button>
+            <a class="btn btn-warning pull-right" routerLink="/user-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>

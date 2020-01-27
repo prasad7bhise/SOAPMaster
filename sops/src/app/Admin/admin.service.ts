@@ -5,7 +5,7 @@ import { Router, ActivatedRouteSnapshot, RouterStateSnapshot, CanActivate } from
 @Injectable()
 export class AdminService implements CanActivate{
 
-url = 'http://localhost:4000/admin/login'
+url = 'http://localhost:4000'
 
   constructor(
     private http: HttpClient,
@@ -27,6 +27,17 @@ url = 'http://localhost:4000/admin/login'
       email: email,
       password: password
     }
-    return this.http.post(this.url , body)
+    return this.http.post(this.url+'/admin/login/' , body)
   }
+
+  getcheckoutlist(){
+    return this.http.get(this.url+'/admin/getcheckout')
+
+
+  }
+  getpayment(){
+    return this.http.get(this.url+'/admin/payment')
+  }
+
 }
+

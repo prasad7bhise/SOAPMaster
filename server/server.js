@@ -7,6 +7,11 @@
  const routerAdmin=require('./admin')
  const routerCategory = require('./category')
  const routerMenu = require('./menu')
+ const routerTable = require('./table')
+ const routeUser = require('./users')
+ const routerCart  = require('./cart')
+ const routercheckout = require ('./checkout')
+ const routerpayment = require ('./payment')
  
 
 const app = express();
@@ -24,6 +29,11 @@ app.use(bodyParser.json())//why we use this??
 app.use('/admin',routerAdmin)
 app.use('/category',routerCategory)
 app.use('/menu',routerMenu)
+app.use('/table',routerTable)
+app.use('/users',routeUser)
+app.use('/cart',routerCart)
+app.use('/checkout',routercheckout)
+app.use('/payment',routerpayment)
 
 
 app.listen(4000,'0.0.0.0',()=>{

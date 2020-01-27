@@ -32,7 +32,8 @@ updateCategory(category_id:number,category_name:string){
   }
   return this.http.put(this.url+'/update/'+category_id,body)
 }
-getCategoryById(id:number){
+
+getCategoryById(id: number){
   return this.http.get(this.url)
 }
 

@@ -46,17 +46,9 @@ export class AdminLoginComponent implements OnInit {
           if (this.rememberme){
 
             //maintain login status
-           localStorage['login_status'] = '1'
-           localStorage['email'] = this.email
-           this.email = localStorage['email']
+            sessionStorage['login_status']='1'
+            sessionStorage['email']=response['data']['email']
             this.router.navigate(['/menu-list'])
-
-
-        localStorage['email'] = response ['data']['email']
-          //redirect to main component
-          if(this.componentToLaunch && this.componentToLaunch.length >0 )
-              this.router.navigate(['/menu-list' + this.componentToLaunch])
-
           }
         }
         else{

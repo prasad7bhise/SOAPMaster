@@ -10,8 +10,9 @@ import * as toastr from 'toastr'
 
 export class CategoryListComponent implements OnInit {
   categories=[]
+  email
   constructor(private categoryservice: CategoryService) {
-
+    this.email = sessionStorage['email']
     this.getCategory()
 
   }

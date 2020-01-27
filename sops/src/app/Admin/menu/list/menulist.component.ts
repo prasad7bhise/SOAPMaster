@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import {  MenuService  } from '../menu.service';
+import { Component, OnInit } from '@angular/core'
+import {  MenuService  } from '../menu.service'
+import {Router} from '@angular/router'
 
-import * as toastr from 'toastr';
+import * as toastr from 'toastr'
 
 @Component({
     selector: 'app-menu-list',
@@ -11,12 +12,22 @@ import * as toastr from 'toastr';
 
 export class MenuListComponent implements OnInit {
     menulists = []
-    constructor(private menuService: MenuService) {
+    email
+    constructor(private menuService: MenuService, private router: Router) {
         this.getmenus()
+        this.email = sessionStorage['email']
 
      }
 
     ngOnInit() { }
+
+    onLogout(){
+      sessionStorage.removeItem('login_status')
+      sessionStorage.removeItem('email')
+        this.router.navigate(['/admin-login'])
+        toastr.success('Logged Out')
+
+    }
 
     getmenus(){
         this.menuService.getmenus().subscribe(response=>{

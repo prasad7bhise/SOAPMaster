@@ -1,0 +1,63 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Smart Ordering and Payment System</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/table-list">Tables</a></li>
+        <li><a routerLink='/category-list'>Category</a></li>
+        <li><a routerLink="/menu-list">Menu</a></li>
+        <li><a routerLink="/admin-user">User list</a></li>
+        <li><a routerLink="/order-list">Orders</a></li>
+        <li><a routerLink="/payment-list">Payment history</a></li>
+        <li><a routerLink="/admin-users">separator</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+<div class="pull-right">
+    <div class="message">Welcome {{email}}</div>
+    <button (click)="onLogout()" class="btn btn-success pull-right">Logout</button>
+
+</div>
+  </div>
+</div>
+
+
+<h1>Payment List</h1>
+<table class="table table-striped table-bordered">
+<thead>
+    <tr>
+        <th>Checkout Id</th>
+        <th>User Id</th>
+        <th>Date</th>
+        <th>Total Price</th>
+        <th>Payment Mode</th>
+
+    </tr>
+</thead>
+
+<tbody>
+    <tr *ngFor="let payment of payments">
+        <td>{{payment.pay_id}}</td>
+        <td>{{payment.id }}</td>
+        <td>{{payment.datetime }}</td>
+        <td>{{payment.Total_test}}</td>
+        <td>{{payment.payment_mode}}</td>
+    </tr>
+
+
+</tbody>
+</table>

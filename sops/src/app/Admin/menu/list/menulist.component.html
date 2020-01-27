@@ -1,20 +1,48 @@
-<h1>Menu List</h1>
 
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">Smart Ordering and Payment System</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a routerLink="/table-list">Tables</a></li>
+          <li><a routerLink='/category-list'>Category</a></li>
+          <li><a routerLink="/menu-list">Menu</a></li>
+          <li><a routerLink="/admin-user">User list</a></li>
+          <li><a routerLink="/order-list">Orders</a></li>
+          <li><a routerLink="/payment-list">Payment history</a></li>
+          <li><a routerLink="/admin-users">separator</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+<div class="pull-right">
+    <div class="message">Welcome {{email}}</div>
+    <button (click)="onLogout()" class="btn btn-success pull-right">Logout</button>
+
+</div>
+  </div>
+</div>
+
+
+
+<div>
+<h1>Menu List</h1>
+</div>
 
 <a class="btn btn-primary pull-right product-add" routerLink="/menu-add" >Add Menu</a>
-<!--
-<div>
-    <div class="col-md-3 product" *ngFor="let product of products">
-        <div class="product_id">{{product.product_id}}</div>
-        <div class="vendor_id">{{product.vendor_id}}</div>
-        <div class="category_id">{{product.category_id}}</div>
-        <div class="product_name">{{product.product_name}}</div>
-        <div class="description">{{product.description}}</div>
-        <div class="price">{{product.price}}</div>
-        <div class="quantity">{{product.quantity}}</div>
-
-    </div>
-</div> -->
 
 <table class="table table-striped table-bordered">
     <thead>
@@ -35,7 +63,7 @@
             <td>{{menulist.price}}</td>
             <td>
                 <button (click)="deletemenus(menulist.menu_id)" class="btn btn-danger"> <i class="glyphicon glyphicon-trash"></i></button>
-                <a class="btn btn-warning" > <i class="glyphicon glyphicon-pencil"></i></a>
+                <a routerLink="/menu-update" class="btn btn-warning" > <i class="glyphicon glyphicon-pencil"></i></a>
 
             </td>
         </tr>

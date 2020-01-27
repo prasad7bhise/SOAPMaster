@@ -1,11 +1,32 @@
 const db=require('./db')
 const express=require('express')
 const utils = require('./utils')
-const cryptoJs = require('crypto-js')
+//const cryptoJs = require('crypto-js')
 
 const router=express.Router()
 
 router.get('/',(request,response)=>{
+    const connection=db.connect()
+    const statement=`select * from users `
+    connection.query(statement,(error,data)=>{
+        connection.end()
+        response.send(utils.createResult(error,data))
+    })
+})
+
+router.get('/payment',(request,response)=>{
+    const connection=db.connect()
+    const statement=`select * from payment `
+    connection.query(statement,(error,data)=>{
+        connection.end()
+        response.send(utils.createResult(error,data))
+    })
+})
+
+
+
+
+router.get('/admins',(request,response)=>{
     const connection=db.connect()
     const statement='select * from admin'
     connection.query(statement,(error,data)=>{
@@ -43,6 +64,15 @@ router.post('/login',(request,response)=>{
             }
             response.send(utils.createResult(null, info))//??
         }
+    })
+})
+
+router.get('/getcheckout',(request,response)=>{
+    const connection=db.connect()
+    const statement=`select * from checkout `
+    connection.query(statement,(error,data)=>{
+        connection.end()
+        response.send(utils.createResult(error,data))
     })
 })
 
