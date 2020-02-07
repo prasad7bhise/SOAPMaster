@@ -1,0 +1,196 @@
+{
+  "project_info": {
+    "project_number": "389842284824",
+    "firebase_url": "https://application22-f428e.firebaseio.com",
+    "project_id": "application22-f428e",
+    "storage_bucket": "application22-f428e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389842284824:android:cbd62a32f131f95f622e6d",
+        "android_client_info": {
+          "package_name": "com.sunbeaminfo.application1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389842284824-uaurdtgsdh6fn5unnnji8r37rlvbtgu8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunbeaminfo.application1",
+            "certificate_hash": "39ce555f42fdf6bc039cbb54e7807369c3b18281"
+          }
+        },
+        {
+          "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQzhbejZETBowHqXjY4xHGQH1E509T0Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389842284824:android:454421cc04134ba9",
+        "android_client_info": {
+          "package_name": "com.sunbeaminfo.application2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389842284824-soorn1te1q6qcdl7ikf1hmqvttuhq8nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunbeaminfo.application2",
+            "certificate_hash": "75c7fed2055a18763eb8b7d89b829b4f5f375858"
+          }
+        },
+        {
+          "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQzhbejZETBowHqXjY4xHGQH1E509T0Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389842284824:android:5f675c5445466f7f622e6d",
+        "android_client_info": {
+          "package_name": "com.sunbeaminfo.application5"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389842284824-s7o3ugiqok66or1pp0hcs0n8g9hdk3ve.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunbeaminfo.application5",
+            "certificate_hash": "39ce555f42fdf6bc039cbb54e7807369c3b18281"
+          }
+        },
+        {
+          "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQzhbejZETBowHqXjY4xHGQH1E509T0Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389842284824:android:90764305a15a69d6622e6d",
+        "android_client_info": {
+          "package_name": "com.sunbeaminfo.ecomm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389842284824-9vm9kvpvurfa6gs1sfru8v7f8dlemiof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunbeaminfo.ecomm",
+            "certificate_hash": "39ce555f42fdf6bc039cbb54e7807369c3b18281"
+          }
+        },
+        {
+          "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQzhbejZETBowHqXjY4xHGQH1E509T0Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:389842284824:android:45d8d277e3870a1c622e6d",
+        "android_client_info": {
+          "package_name": "com.sunbeaminfo.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "389842284824-40lss2kmh2pbk9ltnokkk25n1is0nlng.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sunbeaminfo.myapplication",
+            "certificate_hash": "39ce555f42fdf6bc039cbb54e7807369c3b18281"
+          }
+        },
+        {
+          "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQzhbejZETBowHqXjY4xHGQH1E509T0Lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "389842284824-a9m7e9rucholvsna5edsu93aom4emr1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

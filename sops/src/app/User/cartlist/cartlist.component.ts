@@ -76,7 +76,7 @@ export class CartComponent implements OnInit {
             .subscribe(response=>{
                 if(response['status'] == 'success'){
                     toastr.success('Product Added Succesfully!!')
-                    window.location.reload();
+                    window.location.reload()
 
                 }
                 else{
